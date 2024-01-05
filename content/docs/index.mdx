@@ -1,0 +1,60 @@
+---
+title: Fiscal Data Package
+description: |
+  Fiscal Data Package standard.
+template: splash
+editUrl: false
+hero:
+  tagline: |
+    <strong>Fiscal Data Package</strong> is a lightweight and user-oriented format for publishing and consuming fiscal data. Fiscal data packages are made of simple and universal components. They can be produced from ordinary spreadsheet software and used in any environment.
+  image:
+    file: ../../assets/hero.png
+  actions:
+    - text: Get Started
+      link: /standard/introduction/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/frictionlessdata/datapackage-fiscal
+      icon: external
+banner:
+  content: |
+    <p>
+      It's a live draft of the <strong>Fiscal Data Package (v1) standard</strong>
+    </p>
+---
+
+import About from "../../components/about.astro"
+import Adoption from "../../components/adoption.astro"
+import { CardGrid, LinkCard, Card } from "@astrojs/starlight/components"
+
+## Standard
+
+The Fiscal Data Package Standard contains a core specification and a taxonomy:
+
+<CardGrid>
+  <Card title="Fiscal Data Package" icon="open-book">
+    Fiscal Data Package is a lightweight and user-oriented format for publishing and
+    consuming fiscal data.
+  </Card>
+  <Card title="Fiscal Data Package - taxonomy" icon="document">
+    The Budget Taxonomy is a set of ColumnTypes to be used in the context of a Fiscal Data
+    Package to describe spending data of organizations (governments or otherwise)
+  </Card>
+</CardGrid>
+
+<div style="margin-bottom: 5em"></div>
+
+## Documentation
+
+Read the Data Package documentation to learn more about the standard:
+
+<CardGrid>
+  <LinkCard title="Specifications" href="/specifications/fiscal-data-package/" />
+  <LinkCard title="Guides" href="/guides/using-fiscal-data-package/" />
+</CardGrid>
+
+<About title="Brought to you by">
+  We are building a world open by design where all knowledge is accessible to everyone
+  [Learn about Open Knowledge](https://okfn.org)
+</About>

@@ -1,0 +1,41 @@
+:root {
+  /* --sl-font: "HK-Grotesk", sans-serif; */
+  --purple-hsl: 209, 60%, 60%;
+  --overlay-blurple: hsla(var(--purple-hsl), 0.2);
+  --scrollbar-color: #ddd;
+}
+
+:root[data-theme="light"] {
+  --purple-hsl: 209, 85%, 65%;
+  --sl-color-text-accent: #61d2fe;
+  --sl-color-banner-bg: #5dd86d;
+}
+
+:root[data-theme="dark"] {
+  --sl-color-text-accent: #61d2fe;
+  --sl-color-banner-bg: #5dd86d;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: var(--scrollbar-color) transparent;
+}
+
+/* Webkit */
+/* Make scrollbars transparent except for main page scrollbar. */
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: var(--scrollbar-color);
+}

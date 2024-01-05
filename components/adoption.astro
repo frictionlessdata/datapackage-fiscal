@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+import {adoption} from '../assets'
+---
+
+<ul>
+    <li><Image src={adoption.dryad} alt="Dryad"></li>
+    <li><Image src={adoption.owid} alt="Our World in Data"></li>
+    <li><Image src={adoption.github} alt="Github"></li>
+</ul>
+<ul style="margin-top: 0">
+    <li><Image src={adoption.bcodmo} alt="BCO-DMO"></li>
+    <li><Image src={adoption.pudl} alt="PUDL"></li>
+    <li><Image src={adoption.elife} alt="Elife"></li>
+    <li><Image src={adoption.oxford} alt="Oxford"></li>
+    <li><Image src={adoption.ukds} alt="UKDS"></li>
+</ul>
+<ul style="margin-top: 0">
+    <li><Image src={adoption.odb} alt="Open Data Blend"></li>
+    <li><Image src={adoption.cmoa} alt="CMOA"></li>
+    <li><Image src={adoption.dataworld} alt="Data World"></li>
+    <li><Image src={adoption.chicago} alt="The University of Chicago"></li>
+    <li><Image src={adoption.validata} alt="Validata"></li>
+</ul>
+
+<style>
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    ul li {
+        flex-basis: calc(20% - 16px); /* Adjust the width as needed */
+        flex-grow: 1; /* Expand image to fill remaining vertical space */
+        height: 100%
+    }
+
+    ul li img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border: dashed 1px #ccc;
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+        ul li {
+            flex-basis: calc(50% - 16px); /* Adjust for two columns on smaller screens */
+        }
+    }
+</style>
