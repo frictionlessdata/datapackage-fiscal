@@ -18,7 +18,7 @@ This is a draft specification and still under development. If you have comments 
   </tr>
   <tr>
     <th>Profile</th>
-    <td><a href="https://specs.frictionlessdata.io/schemas/fiscal-data-package.json">fiscal-data-package.json</a></td>
+    <td><a href="/profiles/fiscal-data-package.json">fiscal-data-package.json</a></td>
   </tr>
 </table>
 

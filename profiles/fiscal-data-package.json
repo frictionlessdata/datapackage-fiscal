@@ -4,15 +4,17 @@
   "description": "Fiscal Data Package is a simple specification for data access and delivery of fiscal data.",
   "type": "object",
   "allOf": [
-    { "$ref": "schemas/dictionary.json#/definitions/tabularDataPackage" },
+    { "$ref": "build/profiles/dictionary.json#/definitions/tabularDataPackage" },
     {
       "required": ["resources", "model", "profile"],
       "properties": {
         "resources": {
-          "$ref": "schemas/dictionary.json#/definitions/tabularDataResources"
+          "$ref": "build/profiles/dictionary.json#/definitions/tabularDataResources"
         },
-        "model": { "$ref": "schemas/dictionary.json#/definitions/fiscalModel" },
-        "countryCode": { "$ref": "schemas/dictionary.json#/definitions/countryCode" },
+        "model": { "$ref": "build/profiles/dictionary.json#/definitions/fiscalModel" },
+        "countryCode": {
+          "$ref": "build/profiles/dictionary.json#/definitions/countryCode"
+        },
         "granularity": {
           "title": "Granularity of resources",
           "description": "A keyword that represents the type of spend data, eiter aggregated or transactional",
