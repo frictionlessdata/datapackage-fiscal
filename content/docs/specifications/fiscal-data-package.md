@@ -38,8 +38,6 @@ The key words `MUST`, `MUST NOT`, `REQUIRED`, `SHALL`, `SHALL NOT`, `SHOULD`, `S
 - [`0.2.0`](./0.2/): large numbers of changes and clarifications for particular fields but no substantive change to the overall spec
 - [`0.1.0`](./0.1/): first complete version of the specification
 
-[toc]
-
 ## Introduction
 
 This document contains the "Fiscal Data Package" specification - a lightweight and user-oriented format for publishing and consuming fiscal data.
