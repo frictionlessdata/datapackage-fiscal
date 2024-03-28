@@ -12,9 +12,3 @@ Running the project locally:
 npm install
 npm start
 ```
-
-Building profiles:
-
-```bash
-node build.js
-```

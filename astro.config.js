@@ -25,15 +25,9 @@ export default defineConfig({
       customCss: ["typeface-hk-grotesk/index.css", "/assets/styles.css"],
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 5 },
       sidebar: [
-        { label: "Standard", autogenerate: { directory: "standard" } },
         {
           label: "Specifications",
           autogenerate: { directory: "specifications" },
-        },
-        {
-          label: "Guides",
-          collapsed: false,
-          autogenerate: { directory: "guides" },
         },
       ],
       head: [
